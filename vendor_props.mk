@@ -93,6 +93,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.opengles.version=196610 \
     vendor.gralloc.disable_ubwc=0 \
     ro.config.avoid_gfx_accel=true \
+    debug.sf.disable_client_composition_cache=1 \
     ro.hardware.vulkan=adreno \
     ro.hardware.egl=adreno
 
