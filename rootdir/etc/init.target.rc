@@ -136,6 +136,9 @@ on boot
     chown cameraserver cameraserver /dev/cpuset/camera-daemon/tasks
     chmod 0660 /dev/cpuset/camera-daemon/tasks
 
+# Enable ZRAM on boot_complete
+    swapon_all /vendor/etc/fstab.qcom
+
 #Load WLAN driver
     insmod /vendor/lib/modules/qca_cld3_wlan.ko
 
