@@ -137,6 +137,8 @@ on boot
     chmod 0660 /dev/cpuset/camera-daemon/tasks
 
 # Enable ZRAM on boot_complete
+on property:sys.boot_completed=1
+    rm /data/unencrypted/zram_swap
     swapon_all /vendor/etc/fstab.qcom
 
 #Load WLAN driver
