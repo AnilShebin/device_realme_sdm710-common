@@ -59,6 +59,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Display
 PRODUCT_PROPERTY_OVERRIDES += \
+    debug.sf.enable_egl_image_tracker=1 \
     debug.sf.disable_client_composition_cache=1 \
     ro.vendor.display.ad.sdr_calib_data=/vendor/etc/OPPO_OLED_AD_calib.cfg \
     ro.vendor.display.ad=1 \
