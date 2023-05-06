@@ -28,7 +28,6 @@ import com.kharame.kharameparts.settings.ScreenOffGesture;
 import com.kharame.kharameparts.util.Utils;
 import com.kharame.kharameparts.doze.DozeUtils;
 import com.kharame.kharameparts.vibration.VibratorStrengthPreference;
-import com.kharame.kharameparts.kcal.DisplayCalibration;
 import java.io.File;
 import androidx.preference.PreferenceManager;
 
@@ -63,7 +62,6 @@ public class BootReceiver extends BroadcastReceiver {
         }
 		DozeUtils.checkDozeService(context);
                 VibratorStrengthPreference.restore(context);
-		context.startService(new Intent(context, DisplayCalibration.class));
     }
 
     private String getPreferenceString(Context context, String key, String defaultValue) {

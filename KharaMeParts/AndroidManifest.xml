@@ -94,16 +94,6 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-
-        <activity
-            android:name="com.kharame.kharameparts.kcal.DisplayCalibration"
-            android:label="@string/kcal_title"
-            android:exported="true"
-            android:theme="@style/Theme.SubSettingsBase">
-          <intent-filter>
-                <action android:name="com.android.settings.action.IA_SETTINGS" />
-          </intent-filter>
-        </activity>
     
         <service
             android:name=".fpsinfo.FPSInfoService"
