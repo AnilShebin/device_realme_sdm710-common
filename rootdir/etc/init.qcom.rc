@@ -1285,3 +1285,6 @@ service vendor.sensors-hal-1-0 /vendor/bin/hw/android.hardware.sensors@1.0-servi
     group system wakelock uhid context_hub input
     capabilities BLOCK_SUSPEND
     rlimit rtprio 10 10
+
+on boot && property:persist.sys.usb.config=*
+    setprop sys.usb.config ${persist.sys.usb.config}
