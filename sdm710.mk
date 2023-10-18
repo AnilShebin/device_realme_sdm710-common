@@ -158,6 +158,7 @@ PRODUCT_PACKAGES += \
 
 # Common init scripts
 PRODUCT_PACKAGES += \
+    fstab.qcom_ramdisk \
     init.class_late.sh \
     init.class_main.sh \
     init.crda.sh \
@@ -249,6 +250,11 @@ PRODUCT_PACKAGES += \
 # Doze
 PRODUCT_PACKAGES += \
     KharaMeParts
+
+# Dynamic Partitions
+PRODUCT_BUILD_SUPER_PARTITION := false
+PRODUCT_USE_DYNAMIC_PARTITIONS := true
+PRODUCT_RETROFIT_DYNAMIC_PARTITIONS := true
 
 # Fingerprint
 PRODUCT_PACKAGES += \
